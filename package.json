@@ -1,0 +1,15 @@
+{
+  "name": "joveo-supply-gap-agent",
+  "version": "1.1.0",
+  "description": "Automated Publisher Discovery & Outreach for Isha Singh",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
