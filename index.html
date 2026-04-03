@@ -37,7 +37,18 @@
                 })
             });
             const data = await res.json();
-            foundGaps = JSON.parse(data.content[0].text);
+
+if (!data.content) {
+    alert("API Error: " + JSON.stringify(data));
+    return;
+}
+
+try {
+    foundGaps = JSON.parse(data.content[0].text);
+} catch (e) {
+    console.error(data);
+    alert("Parsing failed. Check console.");
+}
             render();
         }
 
